@@ -1,15 +1,7 @@
 # F1-Analysis
 
-Formula 1 generates massive volumes of high-velocity, multi-source telemetry, timing, and race data during every single Grand Prix weekend. Managing, processing, and deriving real-time or historical analytical insights from this data mimics complex enterprise data challenges:
+F1-Analysis is an end-to-end Formula 1 data engineering project that ingests raw race data from multiple sources, stores it in Azure Data Lake Storage, processes and cleans it using Azure Databricks with Delta Lake, and creates a reliable historical dataset for analytics and reporting.
 
-## High-Volume & Diverse Sources: 
-Telemetry data arrives from car sensors, lap times from timing gates, and categorical details from reference tables (circuits, drivers, constructors).
+his project implements an end-to-end data engineering pipeline for Formula 1 data using Azure Data Lake Storage (ADLS Gen2) and Azure Databricks with Delta Lake. It focuses on ingesting raw F1 datasets, applying data quality checks, transforming them into clean analytical tables, and building a scalable, lakehouse-based architecture for downstream reporting and analysis.
 
-## The Engineering Challenge: 
-Raw data is often unstructured, siloed, and messy. Analysts and data scientists require a clean, reliable, and version-controlled historical record to build predictive models or performance dashboards.
-
-## The Solution: 
-This project simulates a production-grade data pipeline for an F1 analytics platform. By utilizing Azure Data Lake Storage (ADLS Gen2) for scalable cloud storage and Azure Databricks with Delta Lake, the pipeline guarantees data reliability (ACID compliance), tracks historical changes (Time Travel), and automates incremental data flows from raw ingestion to final business-ready aggregations.
-
-## Objective:
-To design and build an automated, fault-tolerant cloud data architecture that ingests raw Formula 1 files, cleans and transforms them through structured quality gates, and serves optimized, aggregated datasets ready for downstream analytics or reporting tools.
+The goal is to simulate a production-grade cloud data platform that enables robust historical analysis, faster decision-making, and a strong foundation for advanced analytics in motorsport.
